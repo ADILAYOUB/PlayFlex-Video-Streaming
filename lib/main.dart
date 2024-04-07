@@ -25,7 +25,7 @@ Future<void> main() async {
 
   await Firebase.initializeApp(
           options: DefaultFirebaseOptions
-              .currentPlatform) //currentPlatform - android , ios, web, etc
+              .currentPlatform)
       .then((FirebaseApp value) => Get.put(AuthenticationRepository()));
   runApp(const MyApp());
   print("runApp!");
